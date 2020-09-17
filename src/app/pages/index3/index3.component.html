@@ -19,13 +19,16 @@
           <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
             <a href="javascript: void(0);" [ngxScrollTo]="'#features'" class="nav-link">Integre seu sistema</a>
           </li>
-          <li class="nav-item" [ngClass]="{'active':currentSection === 'pricing'}">
-            <a href="javascript: void(0);" [ngxScrollTo]="'#pricing'" class="nav-link"
-              [ngxScrollToOffset]="5">Notifique.ai</a>
-          </li>
+          
           <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}">
-            <a href="javascript: void(0);" [ngxScrollTo]="'#blog'" class="nav-link" [ngxScrollToOffset]="5">Sobre o WhatsApp</a>
+            <a href="javascript: void(0);" [ngxScrollTo]="'#blog'" class="nav-link" [ngxScrollToOffset]="5"> Notifique.ai</a>
           </li>
+
+          <li class="nav-item" [ngClass]="{'active':currentSection === 'whatsapp'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#whatsapp'" class="nav-link"
+              [ngxScrollToOffset]="5">Sobre o WhatsApp</a>
+          </li>
+
           <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}">
             <a href="javascript: void(0);" [ngxScrollTo]="'#contact'" class="nav-link" [ngxScrollToOffset]="5">Fale conosco</a>
           </li>
@@ -82,8 +85,8 @@
     <!-- Hero End -->
     <app-description></app-description>
     <app-features></app-features>
-    <app-pricing></app-pricing>
     <app-blog></app-blog>
+    <app-pricing></app-pricing>
     <app-contact></app-contact>
     <app-footer></app-footer>
   </div>

@@ -10,7 +10,7 @@ import { Index6Component } from './index6/index6.component';
 const routes: Routes = [
     {
         path: '',
-        component: IndexComponent
+        component: Index3Component
     },
     {
         path: 'index-1',
