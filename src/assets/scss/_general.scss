@@ -1,0 +1,52 @@
+/*
+// 1. General
+*/
+
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+body {
+    font-family: $font-primary;
+    color: $dark;
+    background: $body-bg;
+    font-weight: 500;
+}
+p {
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-secondary;
+    font-weight: 700;
+}
+
+
+.box-geral-direita div.box-texto h2{
+  text-align: center;
+}
+
+.box-geral-esquerda div.box-texto h2, .box-geral-direita div.box-texto h2 {
+  color:$muted;
+  line-height:100px;
+  position: relative;
+}
+
+.box-geral-esquerda div.box-texto h2:before {
+  content: "";
+  position: absolute;
+  border-bottom: 25px solid $muted;
+  width: 80px;
+  left:auto;
+  bottom:0
+}
+
+.box-geral-direita div.box-texto h2:after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid $muted;
+  width: 100px;
+  right:45%;
+  bottom:0
+}
