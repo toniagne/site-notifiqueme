@@ -1,0 +1,57 @@
+{
+
+  "contents":
+  [
+    {
+      "pt_br": [
+        {
+          "menu_work": "Como funciona",
+          "menu_integration": "Integre seu sistema",
+          "menu_notification": "Notifique.ai",
+          "menu_about_whatsapp": "Sobre o WhatsAPP",
+          "menu_plans": "Nossos Planos",
+          "menu_contact": "Fale conosco"
+        },
+        {
+          "home_title": "Descomplique!",
+          "home_description": "<b>Notifique ai:)</b> Simples, objetivo e eficiente. A solução que você precisa usar o WhatsApp de maneira inteligente",
+          "home_button": "Saiba Mais"
+        }   ]
+    },
+
+
+    {
+      "es": [
+        {
+          "menu_work": "Como funciona",
+          "menu_integration": "Integra tu sistema",
+          "menu_notification": "Notifique.ai",
+          "menu_about_whatsapp": "Sobre o WhatsAPP",
+          "menu_plans": "Nuestros planes",
+          "menu_contact": "Hable con nosotros"
+        },
+        {
+          "home_title": "Sencillo!",
+          "home_description": "<b>Notifique ai:)</b> Sencillo, objetivo y eficaz. La solución que necesitas para usar WhatsApp de forma inteligente",
+          "home_button": "Saber más"
+        }   ]
+    },
+
+    {
+      "en": [
+        {
+          "menu_work": "How it works",
+          "menu_integration": "Integrate your system",
+          "menu_notification": "Notifique.ai",
+          "menu_about_whatsapp": "About o WhatsAPP",
+          "menu_plans": "Our plans",
+          "menu_contact": "Contact us"
+        },
+        {
+          "home_title": "Make it easy!",
+          "home_description": "<b>Notifique ai:)</b> Simple, objective and efficient. The solution you need to use WhatsApp intelligently",
+          "home_button": "Saber más"
+        }   ]
+    }
+  ]
+}

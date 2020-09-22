@@ -1,0 +1,38 @@
+<h2>Fale conosco</h2>
+<form [formGroup]="contactFormGroup" class="contact-form">
+  <mat-form-field class="contact-full-width mb-2">
+    <mat-label>Nome completo</mat-label>
+    <input matInput placeholder="Nome completo" required formControlName="name"/>
+  </mat-form-field>
+
+  <mat-form-field class="contact-full-width mb-2">
+    <mat-label>E-mail</mat-label>
+    <input matInput email placeholder="E-mail" formControlName="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+  </mat-form-field>
+
+  <mat-form-field class="contact-full-width mb-2">
+    <mat-label>Telefone/WhatsApp</mat-label>
+    <input matInput placeholder="Telefone/WhatsApp" formControlName="phone" [specialCharacters]="[ '(', ')', '-' ]" mask="(00)00000-0000"/>
+    <mat-hint align="start">Ex.: <strong>(99) 99999-9999</strong> </mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="contact-full-width mb-2">
+    <mat-label>Assunto</mat-label>
+    <input matInput placeholder="Assunto" formControlName="subject"/>
+  </mat-form-field>
+
+  <mat-form-field class="contact-full-width mb-2">
+    <mat-label>Mensagem</mat-label>
+    <textarea matInput placeholder="Mensagem" rows="5" formControlName="message"></textarea>
+  </mat-form-field>
+
+  <div mat-dialog-actions class="contact-full-width mb-1" align="end">
+    <button mat-button class="btn btn-light mt-0 mr-2" (click)="onNoClick()">Fechar</button>
+    <button mat-button class="btn btn-salmon rounded-0" fullWidth (click)="onSubmit()" cdkFocusInitial>Enviar Mensagem</button>
+  </div>
+</form>
+<div class="position-relative text-center mt-4">
+  <span class="login-border"></span>
+  <p class="social-login text-muted font-size-17">Siga-nos nas nossas redes sociais</p>
+  <app-social-icons></app-social-icons>
+</div>

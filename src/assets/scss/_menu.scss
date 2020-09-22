@@ -12,7 +12,7 @@
 }
 
 .navbar-custom {
-    padding: 14px 0px;
+    padding: 8px 0px;
     width: 100%;
     border-radius: 0px;
     z-index: 999;
@@ -32,12 +32,12 @@
             a {
                 line-height: 26px;
                 color: rgba($light, 0.7);
-                font-size: 12px;
+                font-size: 11px;
                 font-weight: 600;
                 transition: all 0.3s;
                 background-color: transparent !important;
                 padding: 6px 0;
-                margin: 0 20px;
+                margin: 0 15px;
             }
             &:last-child {
                 a {

@@ -23,34 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.box-geral-direita div.box-texto h2{
-  text-align: center;
-}
-
-.box-geral-esquerda div.box-texto h2, .box-geral-direita div.box-texto h2 {
-  color:$muted;
-  line-height:100px;
-  position: relative;
-}
-
-.box-geral-esquerda div.box-texto h2:before {
-  content: "";
-  position: absolute;
-  border-bottom: 25px solid $muted;
-  width: 80px;
-  left:auto;
-  bottom:0
-}
-
-.box-geral-direita div.box-texto h2:after {
-  content: "";
-  position: absolute;
-  border-bottom: 3px solid $muted;
-  width: 100px;
-  right:45%;
-  bottom:0
-}
-
+small { font-size: .83em }
 
 .bg-salmon {
   background-color: #e1937d;
@@ -63,3 +36,5 @@ h1, h2, h3, h4, h5, h6 {
 .bg-light-blue {
   background-color: #3b7ba1;
 }
+
+

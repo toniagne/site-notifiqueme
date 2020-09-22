@@ -1,4 +1,4 @@
-/* 
+/*
 // 04.Helper
 */
 
@@ -93,8 +93,31 @@
   font-size: 24px;
 }
 
+.font-size-35 {
+  font-size: 35px;
+}
+
+.font-size-60 {
+  font-size: 60px;
+}
+
 .title {
-  text-shadow: 1px 2px 3px rgba($dark, 0.2);
+  margin-top: 50px;
+  line-height: 1.4em;
+  position: relative;
+}
+
+.title:after {
+  content:' ';
+  position: absolute;
+  top:130%;
+  left:50%;
+  width: 60px;
+  background-color: $muted;
+  border:2px solid $muted;
+  border-radius:4px;
+  transform:translateX(-50%);
+
 }
 
 .hero-bottom-img {
@@ -120,7 +143,7 @@
       width: 15px !important;
     }
   }
-  
+
   .icon-sm {
     height: 18px;
     width: 18px;
@@ -129,7 +152,7 @@
       width: 18px !important;
     }
   }
-  
+
   .icon-xs {
     height: 20px;
     width: 20px;
@@ -138,7 +161,7 @@
       width: 20px !important;
     }
   }
-  
+
   .icon-md {
     height: 25px;
     width: 25px;
@@ -147,7 +170,7 @@
       width: 25px !important;
     }
   }
-  
+
   .icon-lg {
     height: 30px;
     width: 30px;
@@ -156,7 +179,7 @@
       width: 30px !important;
     }
   }
-  
+
   .icon-xl {
     height: 35px;
     width: 35px;
@@ -165,7 +188,7 @@
       width: 35px !important;
     }
   }
-  
+
   .icon-xxl {
     height: 45px;
     width: 45px;
@@ -174,7 +197,7 @@
       width: 45px !important;
     }
   }
-  
+
   .icon-xxxl {
     height: 60px;
     width: 60px;

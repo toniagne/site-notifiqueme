@@ -1,5 +1,8 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { interval } from 'rxjs';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-index3',
@@ -29,12 +32,27 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
  * Index-3 component
  */
 export class Index3Component implements OnInit {
-
+  mensagem1 = false;
+  mensagem2 = false;
+  mensagem3 = false;
+  content: any = [];
   currentSection = 'home';
+  private browserLang: any;
 
-  constructor(private modalService: NgbModal) { }
+  constructor(public modalService: NgbModal, public translate: TranslateService) { }
 
   ngOnInit(): void {
+    this.translate.addLangs(['pt', 'en', 'es']);
+    this.translate.setDefaultLang('pt');
+
+    const m1 = interval(2000);
+    const m2 = interval(4000);
+    const m3 = interval(6000);
+    const destroy = interval(14000);
+    const reload = interval( 15000);
+    m1.subscribe(val => this.mensagem1 = true);
+    m2.subscribe(val => this.mensagem2 = true);
+    m3.subscribe(val => this.mensagem3 = true);
   }
 
   /**
@@ -86,4 +104,10 @@ export class Index3Component implements OnInit {
   openWindowCustomClass(videocontent) {
     this.modalService.open(videocontent, { windowClass: 'dark-modal', centered: true });
   }
+
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
+
 }

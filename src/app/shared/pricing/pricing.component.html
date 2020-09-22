@@ -1,80 +1,170 @@
 <!-- Pricing Start -->
-<section class="section bg-light" id="pricing">
+<section id="plans">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-6">
+      <div class="col-lg-6 mt-5">
         <div class="text-center mb-5">
-          <h3 class="title mb-3">Choose Your Plan</h3>
-          <p class="text-muted font-size-15">Et harum quidem rerum facilis est et expedita distinctio nam libero
-            tempore cum soluta nobis eligendi cumque.</p>
+          <h2 class="title text-muted mb-3">Não da pra ficar de fora</h2>
+          <p class="text-muted mt-5">É hora de usar tudo isso ao seu favor. Confira os planos:</p>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="container mw-100 mt-5">
     <div class="row">
-      <div class="col-lg-4">
-        <div class="pricing-box rounded text-center p-4">
-          <div class="pricing-icon-bg my-4">
-            <i class="mdi mdi-account h1"></i>
+      <div class="col-sm-3 bg-light-pink justify-content-center">
+          <div class="container text-white px-5 py-5 text-center">
+            <p><strong>500 notificações !</strong></p>
+            <h2 class="font-size-60">
+              <sup><small class="font-size-24">R$</small></sup>
+              <strong>149</strong>
+              <small class="font-size-24">,90</small>
+            </h2>
+            <a href="javascript: void(0);" (click)="openModal(content, '1')"  class="btn btn-white rounded text-pink"><span class="text-pink">Assine</span></a>
           </div>
-          <h4 class="title mb-3">Simple</h4>
-          <h1 class="font-weight-bold mb-0"><b><sup class="h4 mr-2 font-weight-bold">$</sup>19</b></h1>
-          <p class="text-muted font-weight-semibold">User / Month</p>
-          <ul class="list-unstyled pricing-item mb-4">
-            <li class="text-muted">Bandwidth: 1GB</li>
-            <li class="text-muted">Onlinespace: 500MB</li>
-            <li class="text-muted">Support: Yes</li>
-          </ul>
-          <a href="javascript: void(0);" class="btn btn-outline-primary pr-btn">Buy Now</a>
-          <div class="mt-4">
-            <div class="hero-bottom-img">
-              <img src="assets/images/pricing-bottom-bg.png" alt="" class="img-fluid d-block mx-auto">
-            </div>
-          </div>
+      </div>
+      <div class="col-sm-3 bg-yellow justify-content-center">
+        <div class="container text-white px-5 py-5 text-center">
+
+        <p><strong>10.000 notificações !</strong></p>
+        <h2 class="font-size-60">
+          <sup><small class="font-size-24">R$</small></sup>
+          <strong>199</strong>
+          <small class="font-size-24">,90</small>
+        </h2>
+        <a href="javascript: void(0);" (click)="openModal(content, '2')"  class="btn btn-white rounded text-yellow"><span class="text-yellow">Assine</span></a>
+
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="pricing-box rounded text-center active p-4">
-          <div class="pricing-icon-bg my-4">
-            <i class="mdi mdi-account-multiple h1"></i>
-          </div>
-          <h4 class="title mb-3">Basic</h4>
-          <h1 class="font-weight-bold mb-0"><b><sup class="h4 mr-2 font-weight-bold">$</sup>49</b></h1>
-          <p class="text-muted font-weight-semibold">User / Month</p>
-          <ul class="list-unstyled pricing-item mb-4">
-            <li class="text-muted">Bandwidth: 2GB</li>
-            <li class="text-muted">Onlinespace: 1GB</li>
-            <li class="text-muted">Support: Yes</li>
-          </ul>
-          <a href="javascript: void(0);" class="btn btn-primary pr-btn">Buy Now</a>
-          <div class="mt-4">
-            <div class="hero-bottom-img">
-              <img src="assets/images/pricing-bottom-bg.png" alt="" class="img-fluid d-block mx-auto">
-            </div>
-          </div>
+      <div class="col-sm-3 bg-light-blue justify-content-center">
+        <div class="container text-white px-5 py-5 text-center">
+
+          <p><strong>20.000 notificações</strong></p>
+          <h2 class="font-size-60">
+            <sup><small class="font-size-24">R$</small></sup>
+            <strong>299</strong>
+            <small class="font-size-24">,90</small>
+          </h2>
+          <a href="javascript: void(0);" (click)="openModal(content, '3')"  class="btn btn-white rounded text-blue"><span class="text-blue">Assine</span></a>
+
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="pricing-box rounded text-center p-4">
-          <div class="pricing-icon-bg my-4">
-            <i class="mdi mdi-account-group h1"></i>
-          </div>
-          <h4 class="title mb-3">Pro</h4>
-          <h1 class="font-weight-bold mb-0"><b><sup class="h4 mr-2 font-weight-bold">$</sup>89</b></h1>
-          <p class="text-muted font-weight-semibold">User / Month</p>
-          <ul class="list-unstyled pricing-item mb-4">
-            <li class="text-muted">Bandwidth: 3GB</li>
-            <li class="text-muted">Onlinespace: 1.5GB</li>
-            <li class="text-muted">Support: Yes</li>
-          </ul>
-          <a href="javascript: void(0);" class="btn btn-outline-primary pr-btn">Buy Now</a>
-          <div class="mt-4">
-            <div class="hero-bottom-img">
-              <img src="assets/images/pricing-bottom-bg.png" alt="" class="img-fluid d-block mx-auto">
-            </div>
-          </div>
+      <div class="col-sm-3 bg-pink justify-content-center">
+        <div class="container text-white px-5 py-5 text-center">
+
+        <h2 class="font-size-35 mt-5">
+          <strong>ILIMITADO</strong>
+        </h2>
+        <a href="javascript: void(0);" (click)="openModal(content, '4')"  class="btn btn-white rounded text-pink"><span class="text-pink">À consultar</span></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <mdb-carousel class="carousel slide carousel-fade bg-muted" [animation]="'fade'">
+    <mdb-carousel-item>
+      <div class="container ">
+        <div class="row align-items-center justify-content-center">
+          <img class="d-block w-50 mt-5 mb-5" src="assets/images/slide-clinicas.png" alt="First slide">
+        </div>
+      </div>
+    </mdb-carousel-item>
+
+    <mdb-carousel-item>
+      <div class="container ">
+        <div class="row align-items-center justify-content-center">
+          <img class="d-block w-50 mt-5 mb-5" src="assets/images/slide-cobrancas.png" alt="First slide">
+        </div>
+      </div>
+    </mdb-carousel-item>
+
+    <mdb-carousel-item>
+      <div class="container ">
+        <div class="row align-items-center justify-content-center">
+          <img class="d-block w-50 mt-5 mb-5" src="assets/images/slide-logistica.png" alt="First slide">
+        </div>
+      </div>
+    </mdb-carousel-item>
+
+    <mdb-carousel-item>
+      <div class="container ">
+        <div class="row align-items-center justify-content-center">
+          <img class="d-block w-50 mt-5 mb-5" src="assets/images/slide-comercio.png" alt="First slide">
+        </div>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
+
+
+  <div class="container mw-100 bg-pink">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 mt-5">
+        <div class="text-center mb-5">
+          <h2 class="title text-white mb-3">Não da pra ficar de fora</h2>
+          <p class="text-white mt-5">Conte conosco e viabilize seu projeto.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-body">
+    <div class="text-center">
+      <h3 class="hero-1-title mb-4">{{ planTitle }}</h3>
+      <h4 class="text-uppercase text-primary"><b>{{ planValue}}</b></h4>
+    </div>
+    <div class="login-form mt-4">
+      <div class="login-form mt-4">
+        <form [formGroup]="formPrice">
+          <div class="form-group">
+            <label for="lableName">Nome Completo</label>
+            <input type="text" class="form-control" id="lableName" formControlName="name" placeholder="Nome completo">
+          </div>
+          <div class="form-group">
+            <label for="labelPhone">Telefone / WhatsApp</label>
+            <input type="text" class="form-control" id="labelPhone" formControlName="phone" placeholder="Telefone / WhatsApp">
+          </div>
+          <div class="form-group">
+            <label for="labelCity">Cidade/Estado</label>
+            <input type="text" class="form-control" id="labelCity" formControlName="city" placeholder="Cidade / Estado (UF)">
+          </div>
+          <div class="form-group">
+            <label for="labelAddress">Endereço</label>
+            <input type="text" class="form-control" id="labelAddress"  formControlName="address" placeholder="Telefone / WhatsApp">
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" (click)="sendMail($event)" class="btn btn-primary">Enviar <i-feather class="icon-size-15 icon ml-1"
+                                                                                                       name="arrow-right-circle"></i-feather></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="position-relative text-center mt-4">
+        <span class="login-border"></span>
+        <p class="social-login text-muted font-size-17">Siga-nos nas nossas redes sociais</p>
+      </div>
+      <div class="text-center">
+        <ul class="list-inline mt-2 mb-3">
+          <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-primary">
+            <i-feather class="icon-xs" name="facebook"></i-feather>
+          </a></li>
+          <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-info">
+            <i-feather class="icon-xs" name="twitter"></i-feather>
+          </a></li>
+          <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-danger">
+            <i-feather class="icon-xs" name="instagram"></i-feather>
+          </a></li>
+          <li class="list-inline-item"><a href="javascript: void(0);" class="login-social-icon icon-success">
+            <i-feather class="icon-xs" name="linkedin"></i-feather>
+          </a></li>
+        </ul>
+        <p class="text-dark mb-0"> <a href="javascript: void(0);" (click)="modalService.dismissAll()" class="text-dark">Fechar</a></p>
+      </div>
+    </div>
+  </div>
+</ng-template>
 <!-- Pricing End -->

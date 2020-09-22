@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IndexComponent } from './index/index.component';
-
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
@@ -9,21 +7,27 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { PagesRoutingModule } from './pages-routing.module';
 
 import { SharedModule } from '../shared/shared.module';
-import { Index2Component } from './index2/index2.component';
 import { Index3Component } from './index3/index3.component';
-import { Index4Component } from './index4/index4.component';
-import { Index5Component } from './index5/index5.component';
-import { Index6Component } from './index6/index6.component';
+import {TranslateModule} from '@ngx-translate/core';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [IndexComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component],
+  declarations: [Index3Component],
   imports: [
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
     CommonModule,
     PagesRoutingModule,
     SharedModule,
     ScrollToModule.forRoot(),
     NgbModalModule,
-    NgxYoutubePlayerModule
+    NgxYoutubePlayerModule,
+    TranslateModule,
+    FormsModule
   ]
 })
 export class PagesModule { }

@@ -4,9 +4,8 @@
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="text-center mb-5">
-          <h3 class="title mb-3">Contact Us</h3>
-          <p class="text-muted font-size-15">Et harum quidem rerum facilis est et expedita distinctio nam libero tempore
-            cum soluta nobis eligendi cumque.</p>
+          <h2 class="title text-muted mb-3">Fale conosco</h2>
+          <p class="text-muted font-size-15 mt-5">Deixe seu contato, um de nossos consultores entrará em contato o mais breve possível</p>
         </div>
       </div>
     </div>
@@ -14,32 +13,38 @@
       <div class="col-lg-7">
         <div class="custom-form mb-5 mb-lg-0">
           <div id="message"></div>
-          <form>
+          <form [formGroup]="formContact">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <label for="name">Name*</label>
-                  <input id="name" type="text" class="form-control" autocomplete="off" placeholder="Your name...">
+                  <label for="name">Nome completo*</label>
+                  <input id="name" type="text" class="form-control" autocomplete="off" formControlName="name" placeholder="Seu nome...">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="email">Email Address*</label>
-                  <input id="email" type="email" class="form-control" autocomplete="off" placeholder="Your email...">
+                  <label for="email">E-mail*</label>
+                  <input id="email" type="email" class="form-control" autocomplete="off" formControlName="email" placeholder="Seu e-mail...">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Telefone*</label>
+                  <input id="phone" type="text" class="form-control" formControlName="phone" autocomplete="off" placeholder="Seu telefone...">
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12">
                 <div class="form-group">
-                  <label for="comments">Message*</label>
-                  <textarea id="comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
+                  <label for="comments">Mensagem*</label>
+                  <textarea id="comments" rows="4" class="form-control" formControlName="message" placeholder="Mensagem..."></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <button type="button" class="btn btn-primary">Send Message <i-feather class="icon-size-15 ml-2 icon"
+                <button type="button" (click)="sendMail($event)" class="btn btn-pink">Enviar mensagem <i-feather class="icon-size-15 ml-2 icon"
                     name="send"></i-feather></button>
               </div>
             </div>
@@ -47,22 +52,15 @@
         </div>
       </div>
       <div class="col-lg-5">
-        <div class="contact-detail text-muted ml-lg-5">
+        <div class="contact-detail text-primary ml-lg-5">
           <p class="">
-            <i-feather class="icon-xs icon mr-1" name="mail"></i-feather> : <span>support@website.com</span>
+            <i-feather class="icon-xs icon mr-1" name="mail"></i-feather> : <span>comercial@notifiqueai.com.br</span>
           </p>
           <p class="">
-            <i-feather class="icon-xs icon mr-1" name="link"></i-feather> : <span>www.website.com</span>
+            <i-feather class="icon-xs icon mr-1" name="link"></i-feather> : <span>www.notifiqueai.com.br</span>
           </p>
           <p class="">
-            <i-feather class="icon-xs icon mr-1" name="phone-call"></i-feather> : <span>(+001) 123 456 7890</span>
-          </p>
-          <p class="">
-            <i-feather class="icon-xs icon mr-1" name="clock"></i-feather> : <span>9:00 AM - 6:00 PM</span>
-          </p>
-          <p class="">
-            <i-feather class="icon-xs icon mr-1" name="map-pin"></i-feather> : <span>1644 Deer Ridge Drive Rochelle
-              Park, NJ 07662</span>
+            <i-feather class="icon-xs icon mr-1" name="phone-call"></i-feather> : <span>+55 (51) 3083-0698 / +55 (82) 3142-4330</span>
           </p>
         </div>
       </div>
